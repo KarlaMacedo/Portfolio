@@ -6,7 +6,7 @@ import ResumeSection from './components/ResumeSection'
 import StatsSection from './components/StatsSection'
 import AvailabilitySection from './components/AvailabilitySection'
 import ContactSection from './components/ContactSection'
-import BlogSection from './components/BlogSection'
+import PorfolioSection from './components/PortfolioSection'
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <AvailabilitySection />
         <ResumeSection />
         <StatsSection />
-        <BlogSection />
+        <PorfolioSection />
         <ContactSection />
       </div>
     </div>

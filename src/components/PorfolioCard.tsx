@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface BlogCardProps {
+interface PorfolioCardProps {
   title: string;
   author: string;
   likes: number;
@@ -9,7 +9,7 @@ interface BlogCardProps {
   imageSrc: string;
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({
+const PorfolioCard: React.FC<PorfolioCardProps> = ({
   title,
   author,
   likes,
@@ -18,9 +18,9 @@ const BlogCard: React.FC<BlogCardProps> = ({
   imageSrc,
 }) => {
   return (
-    <div className="blog-card">
+    <div className="Porfolio-card">
       <div className="img-holder">
-        <img src={imageSrc} alt="Blog Image" />
+        <img src={imageSrc} alt="Porfolio Image" />
       </div>
       <div className="content-holder">
         <h6 className="title">{title}</h6>
@@ -42,4 +42,4 @@ const BlogCard: React.FC<BlogCardProps> = ({
   );
 };
 
-export default BlogCard;
+export default PorfolioCard;
