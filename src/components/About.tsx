@@ -1,5 +1,6 @@
 import Expertise from './Expertise';
 import PersonalInfo from './PersonalInfo';
+import PDF from '../assets/imgs/CV.pdf'
 
 const About = () => {
   return (
@@ -9,9 +10,11 @@ const About = () => {
         <span className="line mb-5"></span>
         <h5 className="mb-3">Una apasionada desarrolladora web en constante evolución</h5>
         <p className="mt-20">Quieres conocer más detalles sobre mi perfil?</p>
-        <button className="btn btn-outline-danger">
-          <i className="icon-down-circled2 "></i>Descarga mi CV
-        </button>
+        <a href={PDF} target="_blank" rel="noopener noreferrer" download="CV.pdf"> 
+          <button className="btn btn-outline-danger">
+            <i className="icon-down-circled2 "></i>Descarga mi CV
+          </button>
+        </a>
       </div>
         <PersonalInfo />
         <Expertise />

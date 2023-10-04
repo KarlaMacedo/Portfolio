@@ -1,3 +1,4 @@
+import PDF from '../assets/imgs/CV.pdf'
 
 const Header = () => {
   return (
@@ -19,9 +20,11 @@ const Header = () => {
           <h4 className="header-subtitle">Hola, yo soy</h4>
           <h1 className="header-title">Karla Paola Macedo</h1>
           <h6 className="header-mono">Frond-end Developer</h6>
-          <button className="btn btn-primary btn-rounded">
-            <i className="ti-printer pr-2"></i>Descarga mi CV
-          </button>
+          <a href={PDF} target="_blank" rel="noopener noreferrer" download="CV.pdf"> 
+            <button className="btn btn-primary btn-rounded">
+              <i className="ti-printer pr-2"></i>Descarga mi CV
+            </button>
+          </a>
         </div>
       </div>
     </header>
