@@ -11622,7 +11622,7 @@ pre .code {
 
 .contact {
   position: relative;
-  min-height: 700px;
+  min-height: 450px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
