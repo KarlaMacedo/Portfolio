@@ -1,21 +1,25 @@
 import React from 'react';
 
 interface PorfolioCardProps {
-  title: string;
+  mode: string;
   author: string;
-  likes: number;
-  comments: number;
+  time: number;
+  estimate: number;
   content: string;
   imageSrc: string;
+  deploy: string;
+  code: string;
 }
 
 const PorfolioCard: React.FC<PorfolioCardProps> = ({
-  title,
+  mode,
   author,
-  likes,
-  comments,
+  time,
+  estimate,
   content,
   imageSrc,
+  deploy,
+  code,
 }) => {
   return (
     <div className="Porfolio-card">
@@ -23,20 +27,25 @@ const PorfolioCard: React.FC<PorfolioCardProps> = ({
         <img src={imageSrc} alt="Porfolio Image" />
       </div>
       <div className="content-holder">
-        <h6 className="title">{title}</h6>
+        <h6 className="title">{mode}</h6>
         <p className="post-details">
-          <a href="#">By: {author}</a>
+          <a href="#">{author}</a>
           <a href="#">
-            <i className="ti-heart text-danger"></i> {likes}
+            <i className="ti-alarm-clock text-danger"></i> Desarrollado en {time} sprints
           </a>
           <a href="#">
-            <i className="ti-comment"></i> {comments}
+            <i className="ti-stats-up text-danger"></i> Estimado para {estimate} sprints
           </a>
         </p>
         <p>{content}</p>
-        <a href="#" className="read-more">
-          Read more <i className="ti-angle-double-right"></i>
-        </a>
+        <div className="post-details">
+          <a href={deploy} className="read-more text-danger">
+            Ver el proyecto <i className="ti-angle-double-right"></i>
+          </a>
+          <a href={code} className="read-more text-danger">
+            Ver el código <i className="ti-angle-double-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   );

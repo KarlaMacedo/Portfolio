@@ -11312,6 +11312,11 @@ p {
   width: 15px;
 }
 
+.text-mini {
+  font-size: .8rem;
+  font-weight: bolder;
+}
+
 .Porfolio-card .content-holder .post-details a {
   margin-right: 10px;
   color: #444;
@@ -11320,6 +11325,7 @@ p {
   font-weight: 600;
   opacity: .7;
   font-size: 13px;
+  cursor: pointer;
 }
 
 .Porfolio-card .content-holder .read-more {
