@@ -11413,6 +11413,7 @@ pre .code {
 .navbar .nav-link {
   font-weight: bold;
   font-family: "Dosis","Open Sans",sans-serif;
+  text-align: center;
 }
 
 .navbar .nav-link.active {
